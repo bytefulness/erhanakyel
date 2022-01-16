@@ -2,431 +2,288 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dist/styleeshet/main.css" />
-    <script src="dist/script/all.js" defer></script>
-    <title>Erhan Akyel | Front-End Developer</title>
+    <title>Oz Calendarly</title>
+    <link rel="icon" href="./dist/images/logo.svg">
+    <!-- Stylesheet that compiled from Gulp -->
+    <link rel="stylesheet" href="dist/main.css" />
+    <script src="dist/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="navbar position-fixed">
-        <div class="container">
-          <div class="navbar-brand">erhanakyel</div>
-          <button class="btn btn-dark btn-contact">Contact Me</button>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <div class="modal-container hidden">
-        <div class="custom-modal has-animation">
-          <button class="close-modal">&#10005;</button>
-          <img
-            class="modal__img rounded-circle mb-4"
-            src="/dist/assets/images/erhan-akyel.png"
-            alt="Erhan Akyel"
+      <a href='/components.html' class="button button--primary link-to-components">See Components</a>
+
+    <!-- # Header -->
+    <header class="header">
+      <div class="wrapper">
+        <!-- Logo -->
+        <a href="/">
+        <svg
+          class="header__logo"
+          width="37"
+          height="36"
+          viewBox="0 0 37 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M26.4731 18L34 10.8672C31.2331 5.611 25.5039 2 18.8838 2C9.55919 2 2 9.16338 2 18C2 26.8366 9.55919 34 18.8838 34C25.5028 34 31.2328 30.389 34 25.1328L26.4731 18ZM22.1719 22.0758C19.7966 24.3269 15.9451 24.3269 13.5699 22.0758C11.1944 19.8249 11.1944 16.1751 13.5699 13.9242C15.9451 11.6731 19.7966 11.6731 22.1719 13.9242L26.4728 18L22.1719 22.0758Z"
+            stroke="#0069FF"
+            stroke-width="4"
+            stroke-miterlimit="10"
           />
-          <h2 class="modal__title mb-4">Hello,there 👋🏽</h2>
-          <p class="modal__sentence">Feel free to talk your ideas</p>
-          <span class="modal__info mb-3"
-            >I respond within 1-2 working days</span
+        </svg>
+      </a>
+
+        <!-- # Share Public -->
+        <div class="header__share">
+          <span class="header__share-text"> Share Public Link </span>
+          <!-- # Copy Button -->
+          <div class="copy-button">
+            <span class="copy-button__text">calendar.atolye15.com/john</span>
+            <svg
+            class='copy-button__icon'
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.09375 10.75H2.78125C2.07703 10.7492 1.40189 10.469 0.903929 9.97107C0.405969 9.47311 0.125844 8.79797 0.125 8.09375L0.125 2.78125C0.125844 2.07703 0.405969 1.40189 0.903929 0.903929C1.40189 0.405969 2.07703 0.125844 2.78125 0.125L8.09375 0.125C8.79797 0.125844 9.47311 0.405969 9.97107 0.903929C10.469 1.40189 10.7492 2.07703 10.75 2.78125V8.09375C10.7492 8.79797 10.469 9.47311 9.97107 9.97107C9.47311 10.469 8.79797 10.7492 8.09375 10.75ZM2.78125 1.1875C2.35856 1.1875 1.95318 1.35541 1.6543 1.6543C1.35541 1.95318 1.1875 2.35856 1.1875 2.78125V8.09375C1.1875 8.51644 1.35541 8.92182 1.6543 9.2207C1.95318 9.51959 2.35856 9.6875 2.78125 9.6875H8.09375C8.51644 9.6875 8.92182 9.51959 9.2207 9.2207C9.51959 8.92182 9.6875 8.51644 9.6875 8.09375V2.78125C9.6875 2.35856 9.51959 1.95318 9.2207 1.6543C8.92182 1.35541 8.51644 1.1875 8.09375 1.1875H2.78125ZM12.875 10.2188V3.3125C12.875 3.1716 12.819 3.03648 12.7194 2.93685C12.6198 2.83722 12.4846 2.78125 12.3438 2.78125C12.2029 2.78125 12.0677 2.83722 11.9681 2.93685C11.8685 3.03648 11.8125 3.1716 11.8125 3.3125V10.2188C11.8125 10.6414 11.6446 11.0468 11.3457 11.3457C11.0468 11.6446 10.6414 11.8125 10.2188 11.8125H3.3125C3.1716 11.8125 3.03648 11.8685 2.93685 11.9681C2.83722 12.0677 2.78125 12.2029 2.78125 12.3438C2.78125 12.4846 2.83722 12.6198 2.93685 12.7194C3.03648 12.819 3.1716 12.875 3.3125 12.875H10.2188C10.923 12.8742 11.5981 12.594 12.0961 12.0961C12.594 11.5981 12.8742 10.923 12.875 10.2188Z"
+                fill="#222222"
+              />
+            </svg>
+          </div>
+          <!-- #Copy Button -->
+        </div>
+        <!-- # Share Public -->
+
+        <!-- Add Button -->
+        <button class="header__add-button button--primary">
+          Add an allocation
+        </button>
+
+        <!-- # Settings -->
+        <div class="header__settings">
+          <!-- Button -->
+
+          <!-- # Profile -->
+          <img
+            src="./dist/images/profile.jpg"
+            alt="profile image"
+            class="settings__profile"
+          />
+          <svg
+            class="setting__icon"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-          <a href="mailto:hi@akyel.dev" class="btn btn-dark modal__button">
-            Send Mail
-          </a>
+            <path
+              d="M4.8 14.6C5.79411 14.6 6.6 13.7941 6.6 12.8C6.6 11.8059 5.79411 11 4.8 11C3.80589 11 3 11.8059 3 12.8C3 13.7941 3.80589 14.6 4.8 14.6Z"
+              fill="#222222"
+            />
+            <path
+              d="M12 14.6C12.9941 14.6 13.8 13.7941 13.8 12.8C13.8 11.8059 12.9941 11 12 11C11.0059 11 10.2 11.8059 10.2 12.8C10.2 13.7941 11.0059 14.6 12 14.6Z"
+              fill="#222222"
+            />
+            <path
+              d="M19.2 14.6C20.1941 14.6 21 13.7941 21 12.8C21 11.8059 20.1941 11 19.2 11C18.2059 11 17.4 11.8059 17.4 12.8C17.4 13.7941 18.2059 14.6 19.2 14.6Z"
+              fill="#222222"
+            />
+          </svg>
+
+          <!-- # Profile -->
+        </div>
+        <!-- # Settings -->
+
+    </header>
+    <!-- Header -->
+
+
+    <!-- # Scheduled Events Section -->
+    <section class="scheduled-events">
+      <h2 class="label">Scheduled Events</h2>
+      <div class="wrapper">
+        <!-- #Pending -->
+        <div class="scheduled-events__pending">
+          <!-- Title -->
+          <h3 class="display">Pending (3)</h3>
+          <!-- Title -->
+          <p class="pending__explanation">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
+            pellentesque turpis. Fusce eu luctus dui. Duis ultricies egestas
+            scelerisque.
+          </p>
+          <!-- Explanation -->
+        </div>
+        <!-- #Pending -->
+
+        <!-- # Upcoming -->
+        <div class="scheduled-events__upcoming">
+          <h3 class="display">
+            Upcoming (2)
+            <svg
+              width="12"
+              height="22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.828 21.5L.625 19.286 8.883 11 .625 2.714 2.835.5l8.25 8.286a3.135 3.135 0 010 4.428L2.829 21.5z"
+                fill="#B8B8B8"
+              />
+            </svg>
+          </h3>
+        </div>
+        <!-- # Upcoming -->
+      </div>
+    </section>
+    <!-- # Section -->
+
+    <section class="requests">
+ 
+      <!-- # Requset Card Component -->
+      <div class="request-card">
+        <div class="request-card__body">
+          <div class="request__info">
+            <span class="request__info-date--danger">
+              !!! 13 Jun 2022 / 15:00 - 16:00
+            </span>
+            <span class="request__info-subject">
+              UX meeting for Atolye15.com design
+            </span>
+          </div>
+          <div class="requester__info">
+            <span class="requester__info-name">Jane Doe - </span>
+            <span class="requester__info-mail">janedoe@example.com</span>
+          </div>
+        </div>
+
+        <div class="request-card__footer">
+          <span class="request-card__footer-details"
+            >Details
+            <svg
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 5H10.5L6.4545 8.94161C6.33395 9.05904 6.17046 9.125 6 9.125C5.82954 9.125 5.66605 9.05904 5.5455 8.94161L1.5 5Z"
+                fill="#666666"
+              />
+            </svg>
+          </span>
+          <div class="request-card__footer-actions">
+            <button class="reject button--borderless">Reject</button>
+            <button class="button--success">Accept</button>
+          </div>
         </div>
       </div>
+      <!-- # Requset Card Component -->
 
-      <section class="about-me my-5">
-        <div class="container">
-          <div class="row">
-            <h1 class="title col-md-9 mb-4">Front End Developer & Designer</h1>
-            <p class="summary col-md-12 mb-4">
-              Hi, I’m Erhan. I’m passionate about designing & building
-              delightful experiences with the combination of strategy, usability
-              and performance to make people satisfied.
+      <div class="request-card">
+        <div class="request-card__body">
+          <div class="request__info">
+            <span class="request__info-date"> 15 Jun 2022 / 15:00 - 16:00 </span>
+            <span class="request__info-subject">
+              UX meeting for Atolye15.com design
+            </span>
+          </div>
+          <div class="requester__info">
+            <span class="requester__info-name">John Martin -</span>
+            <span class="requester__info-mail">janedoe@example.com</span>
+          </div>
+        </div>
+
+        <!-- # Event Details -->
+        <div class="request-card__details">
+          <!-- # Ouestions -->
+          <div class="details__question">
+            <span class="details-title">Questions</span>
+            <!-- Question Title -->
+            <p class="details-info">
+              Please share anything that will help prepare for our meeting.
             </p>
           </div>
+          <!-- Question Text -->
+          <!-- # Ouestions -->
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="social">
-                <a href="" class="social__link">
-                  <img
-                    src="/dist/assets/images/github.svg"
-                    alt="Github Profile"
-                    class="social__icon"
-                  />
-                </a>
-                <a href="" class="social__link">
-                  <img
-                    src="/dist/assets/images/linkedin.svg"
-                    alt="LinkedIn Profile"
-                    class="social__icon"
-                  />
-                </a>
-                <a href="" class="social__link">
-                  <img
-                    src="/dist/assets/images/twitter.svg"
-                    alt="Twitter Profile"
-                    class="social__icon"
-                  />
-                </a>
-              </div>
-            </div>
+          <!-- # Availability -->
+          <div class="details__availability">
+            <span class="details-title">Availability</span>
+            <span class="details-info">Wed, 12 Jan 2022 / 11:45</span>
+            <!-- Availability Text -->
+          </div>
+          <!-- # Availability -->
+        </div>
+        <!-- # Event Details -->
+
+        <div class="request-card__footer">
+          <span class="request-card__footer-details"
+            >Details
+            <svg
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 5H10.5L6.4545 8.94161C6.33395 9.05904 6.17046 9.125 6 9.125C5.82954 9.125 5.66605 9.05904 5.5455 8.94161L1.5 5Z"
+                fill="#666666"
+              />
+            </svg>
+          </span>
+          <div class="request-card__footer-actions">
+            <button class="reject button--borderless">Reject</button>
+            <button class="button--success">Accept</button>
           </div>
         </div>
-      </section>
-
-      <section id="professions" class="my-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="development">
-                <h2 class="title">Developments</h2>
-                <p>
-                  <span class="emphasize">Bringing idea to life.</span> I
-                  develop attractive front ends, using the latest technologies
-                  and techniques to make pages better. I use my knowledge and
-                  tools to save time in development, including preprocessors and
-                  my own custom framework to kick start a project.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="design">
-                <h2 class="title">UX/UI Design</h2>
-                <p>
-                  <span class="emphasize">Problem solving.</span> I design
-                  streamlined, easy-to-use websites, apps and user interfaces. I
-                  work to the principle that less is more, while carefully and
-                  strategically including important details and interactions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="languages" class="my-5">
-        <div class="container">
-          <h2 class="title mb-2">Languages I Speak</h2>
-
-          <div class="row px-2 text-center less-gutter">
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/html5.svg"
-                  alt="HTML5"
-                />
-                <span class="icon-title">HTML5</span>
-              </div>
-            </div>
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/css3.svg"
-                  alt="CSS3"
-                />
-                <span class="icon-title">CSS3</span>
-              </div>
-            </div>
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/javascript.svg"
-                  alt="Javascript"
-                />
-                <span class="icon-title">Javascript</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/typescript.png"
-                  alt="Typescript"
-                />
-                <span class="icon-title">Typescript</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/react-logo.svg"
-                  alt="React"
-                />
-                <span class="icon-title">React</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/bootstrap.png"
-                  alt="Bootstrap, CSS Framework"
-                />
-                <span class="icon-title">Bootstrap</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/sass.png"
-                  alt="Sass, CSS Preprocessor"
-                />
-                <span class="icon-title">Sass</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="tools" class="my-5">
-        <div class="container">
-          <h2 class="title mb-2">Tools I Use</h2>
-
-          <div class="row px-2 text-center less-gutter">
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/github.png"
-                  alt="Github"
-                />
-                <span class="icon-title">Github</span>
-              </div>
-            </div>
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/gulp.png"
-                  alt="Gulp"
-                />
-                <span class="icon-title">Gulp.js</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/webpack.png"
-                  alt="Gulp"
-                />
-                <span class="icon-title">Webpack</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/npm-logo.svg"
-                  alt="NPM"
-                />
-                <span class="icon-title">NPM</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/figma.png"
-                  alt="Figma"
-                />
-                <span class="icon-title">Figma</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/wordpress.png"
-                  alt="Wordpress"
-                />
-                <span class="icon-title">Wordpress</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/adobe-photoshop.png"
-                  alt="Photoshop"
-                />
-                <span class="icon-title">Photoshop</span>
-              </div>
-            </div>
-
-            <div class="col-4 col-md-2">
-              <div class="card p-3 p-md-4 my-2">
-                <img
-                  class="icon"
-                  src="/dist/assets/images/adobe-illustrator.png"
-                  alt="Illustrator"
-                />
-                <span class="icon-title">Illustrator</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="qualifications">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 my-3 py-md-4">
-              <div id="skills">
-                <h2 class="title">Skills</h2>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Front End Development</li>
-                  <li class="list-group-item">Mobile-First Approach</li>
-                  <li class="list-group-item">User Experience Design</li>
-                  <li class="list-group-item">Web Performance</li>
-                  <li class="list-group-item">SEO</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 my-3 py-md-4">
-              <div id="experience">
-                <h2 class="title">Experience</h2>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <span class="list__title">Open To New Opportunities</span>
-                  </li>
-                  <li class="list-group-item">
-                    <span class="list__title"
-                      >Front-End Dev. @Voyalogic Team</span
-                    >
-                    <span class="description d-block"> 2018-2020. </span>
-                    <span class="description d-block text-muted"
-                      >Great works that push me to sleepless nights.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-6 my-3 py-md-4">
-              <div id="education">
-                <h2 class="title">Education</h2>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <span class="list__title">HarvardX</span>
-                    <span class="description d-block text-muted">
-                      CS50, Introduction to Computer Science 2021 - Going
-                      On</span
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <span class="list__title"
-                      >The Complete Javascript Course</span
-                    >
-                    <span class="description d-block text-muted">
-                      Udemy (Jonas Schmedtmann), April 2021</span
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <span class="list__title"
-                      >Responsive Web Design Certificate</span
-                    >
-                    <span class="description d-block text-muted">
-                      FreeCodeCamp, January 2021</span
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <span class="list__title"
-                      >The Complete Javascript 2021</span
-                    >
-                    <span class="description d-block text-muted">
-                      Udemy, 2021</span
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <span class="list__title"
-                      >Illustrator CC 2020 Masterclass</span
-                    >
-                    <span class="description d-block text-muted">
-                      Udemy, March 2019</span
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <span class="list__title"
-                      >Photoshop CC 2020 Masterclass</span
-                    >
-                    <span class="description d-block text-muted">
-                      Udemy, February 2019</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer my-5">
-      <div class="container text-center">
-        <h2 class="title">Let's Make It Better</h2>
-        <p>Good things take time and give satisfaction.</p>
-        <span class="footer__mail mb-4">hi@akyel.dev</span>
-
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-4">
-            <div class="social">
-              <a href="" class="social__link">
-                <img
-                  src="/dist/assets/images/github.svg"
-                  alt="Github Profile"
-                  class="social__icon"
-                />
-              </a>
-              <a href="" class="social__link">
-                <img
-                  src="/dist/assets/images/linkedin.svg"
-                  alt="LinkedIn Profile"
-                  class="social__icon"
-                />
-              </a>
-              <a href="" class="social__link">
-                <img
-                  src="/dist/assets/images/twitter.svg"
-                  alt="Twitter Profile"
-                  class="social__icon"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <span class="footer__coder d-block text-muted"
-          >Designed and coded by Erhan Akyel</span
-        >
       </div>
-    </footer>
+
+      <div class="request-card request-card--disabled">
+        <div class="request-card__body">
+          <div class="request__info">
+            <span class="request__info-date"> 16 Jun 2022 / 15:00 - 16:00 </span>
+            <span class="request__info-subject">
+              UX meeting for Atolye15.com design
+            </span>
+          </div>
+          <div class="requester__info">
+            <span class="requester__info-name">Jackie James - </span>
+            <span class="requester__info-mail">janedoe@example.com</span>
+          </div>
+        </div>
+
+        <div class="request-card__footer">
+          <span class="request-card__footer-details"
+            >Details
+            <svg
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 5H10.5L6.4545 8.94161C6.33395 9.05904 6.17046 9.125 6 9.125C5.82954 9.125 5.66605 9.05904 5.5455 8.94161L1.5 5Z"
+                fill="#666666"
+              />
+            </svg>
+          </span>
+          <div class="request-card__footer-actions">
+            <button class="reject button--borderless">Reject</button>
+            <button class="button--success">Accept</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </body>
 </html>

@@ -1,0 +1,2 @@
+"use strict";console.log("This page is developed Erhan Akyel. Many thanks to Atolye15");
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjcmlwdC5qcyJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiYUFBQUEsUUFBUUMsSUFBSSIsImZpbGUiOiJzY3JpcHQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZygnVGhpcyBwYWdlIGlzIGRldmVsb3BlZCBFcmhhbiBBa3llbC4gTWFueSB0aGFua3MgdG8gQXRvbHllMTUnKTtcbiJdfQ==
